@@ -1,0 +1,110 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/*Navigation Bar*/
+nav {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    /*background-color: white;*/
+    height: 80px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    font-size: 19px;
+}
+
+.center a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.center a:hover {
+    color: #3f51b5;
+}
+
+/*nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}*/
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;   
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    /*Navigation Bar*/
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a:last-child {
+        font-size: 22px;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+}
+
+.hero-section {
+    background-color: white;
+    height: 500px;
+}
